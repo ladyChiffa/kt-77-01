@@ -9,10 +9,23 @@ fun main () {
     val discount2 = 0.05
     val discountPermanent = 0.01
 
+    println(amountWithDiscount(amount, permanent,
+            discount1Level, discount2Level,
+            discount1, discount2, discountPermanent))
+}
+
+fun amountWithDiscount( amount:Int,
+                     permanent:Boolean,
+                     discount1Level: Int,
+                     discount2Level: Int,
+                     discount1: Int = 100,
+                     discount2: Double = 0.05,
+                     discountPermanent: Double = 0.01
+                     ) : Int {
+
     var amountTotal = (if(amount < discount1Level) amount else if (amount < discount2Level) amount - discount1 else amount * (1 - discount2)).toInt()
     if (permanent) {
         amountTotal = (amountTotal * (1 - discountPermanent)).roundToInt()
     }
-
-    println(amountTotal)
+    return amountTotal
 }
