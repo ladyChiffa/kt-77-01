@@ -21,7 +21,7 @@ fun operationAvailable(amount: Int,
 }
 fun fee (amount: Int, cardType: String = "Мир", monthTransactions: Int = 0): Int {
     val feeVisa = 0.0075
-    val feeVisaMin = 3
+    val feeVisaMin = 35
     val feeMC = 0.006
     val feeMCMin = 20
     val feeMCLimitMonth = 75_000
