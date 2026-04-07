@@ -1,3 +1,5 @@
+package basics
+
 fun agoToText (seconds: Int) = when {
         seconds < 60 -> "был(а) только что"
         seconds < 60 * 60 -> "был(а) " + (seconds / 60) + " " + minutesForm((seconds / 60)) + " назад"

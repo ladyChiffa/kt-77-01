@@ -1,3 +1,5 @@
+import functions.fee
+import functions.operationAvailable
 import org.junit.Test
 
 import org.junit.Assert.*

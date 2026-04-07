@@ -1,3 +1,5 @@
+package functions
+
 fun main () {
     val amount = 150_000
     val cardType = "MC"

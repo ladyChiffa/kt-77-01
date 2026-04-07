@@ -1,3 +1,5 @@
+package basics
+
 fun main () {
     val likes = 1034
     val rest = 1
