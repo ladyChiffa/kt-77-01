@@ -20,3 +20,7 @@ dependencies {
 kotlin {
     jvmToolchain(17)
 }
+
+test {
+    useJUnit()
+}
